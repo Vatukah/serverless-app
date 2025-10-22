@@ -1,3 +1,3 @@
-export const GET = async (req,res) => {
-      res.json({message:"hello from vercel serverless function!"})
+export const GET = async () => {
+      return JSON.stringify({message:"hello from vercel serverless function!"})
 }
