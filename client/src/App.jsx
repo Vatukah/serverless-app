@@ -14,9 +14,7 @@ function App() {
         const res = await fetch('/api/hello');
         
         // Throw an error if the response status is not OK
-        if (!res.ok) {
-          throw new Error(`API call failed with status: ${res.status}`);
-        }
+       
 
         const data = await res.json();
         console.log(data)
