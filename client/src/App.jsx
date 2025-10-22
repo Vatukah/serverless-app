@@ -19,6 +19,7 @@ function App() {
         }
 
         const data = await res.json();
+        console.log(data)
         setMessage(data.message); // Assuming your serverless function returns { message: "Hello World" }
       } catch (error) {
         console.error("Error fetching data:", error);
